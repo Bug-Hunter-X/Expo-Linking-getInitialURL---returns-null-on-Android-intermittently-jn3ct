@@ -1,0 +1,1 @@
+This bug occurs when using the Expo `Linking` API to handle deep links on Android.  The `Linking.getInitialURL()` promise sometimes resolves to `null` even when a deep link is opened, leading to unexpected behavior in the app.  This is inconsistent with iOS behavior and documentation.  The problem appears to be intermittent and not easily reproducible on demand.
